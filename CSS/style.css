@@ -1,0 +1,48 @@
+.logo img {
+    width: 180px;
+}
+
+body {
+    background-color: #212529;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    background-color: #53575a;
+}
+
+nav li a:hover {
+    color: blue !important;
+}
+
+.carousel-indicators button {
+    height: 10px !important;
+    width: 10px !important;
+    border-radius: 50% !important;
+}
+
+#chat-window {
+    min-height: 400px;
+    max-height: 400px;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.nav-tabs .active {
+    color: black !important;
+    background-color: #6c757d!important;
+    border: none
+}
+
+.nav-tabs button:hover {
+    color: blue !important;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
