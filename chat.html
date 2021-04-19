@@ -20,7 +20,7 @@
             <ul class="nav">
                 <li class="nav-item"><a href="index.html" class="nav-link text-light">Home</a></li>
                 <li class="nav-item"><a href="articles_page.html" class="nav-link text-light">Articles</a></li>
-                <li class="nav-item"><a href="chat.html" class="nav-link active text-primary">Chat</a></li>
+                <li class="nav-item"><a href="chat.html" class="nav-link active text-info">Chat</a></li>
                 <li class="nav-item"><a href="register.html" class="nav-link text-light">Register</a></li>
                 <li class="nav-item"><a href="about_me.html" class="nav-link text-light">About me</a></li>
             </ul>
@@ -38,18 +38,16 @@
     </div>
 
     <div class="mx-5">
-        <ul id="chat-window" class="bg-secondary text-light overflow-auto">
+        <ul id="chat-window" class="bg-secondary fw-bold overflow-auto">
             <li>
-                <div class="card bg-secondary text-light">
-                    <div class="card-header fs-5">
+                <div class="card bg-secondary text-light my-1">
+                    <div class="card-header fs-5 text-info">
                         <span id="name" class="me-5">Katrina M.</span>
-                        <span id="day">17</span>.<span id="month">04</span>.<span id="year">2021</span>
-                        <span id="hour">19</span>:<span id="min">14</span>
+                        <span id="date">17.04.2021 19:14</span>
                     </div>
                     <div class="card-body m-0 fs-7">
                         <div class="">
-                            <p>Just some random chat message I was lazy to write. Just some random chat message I was lazy to write. Just some random chat message I was lazy to write. Just some random chat message I was lazy to write. Just some random chat
-                                message I was lazy to write,
+                            <p>If you want to give a comment about my work or ask some questions, you can also send the message in this chat. &#128522
                             </p>
                         </div>
                     </div>
@@ -58,31 +56,36 @@
         </ul>
 
         <form class="bg-secondary text-light p-3 mb-2 text-dark" id="send-message">
-            <div class="row justify-content-between mx-auto">
-                <div class="col-5">
-                    <div>
-                        <label for="username-input">Username:</label>
+            <div class="row justify-content-between">
+                <div class="col-10 text-info fw-bold">
+                    <div class="row">
+                        <div class="col-4">
+                            <div>
+                                <label for="username-input">Username:</label>
+                            </div>
+                            <div>
+                                <input class="form-control" type="text" id="username-input">
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <input type="text" id="username-input">
-                    </div>
+
                     <div>
                         <label for="message-input">Message:</label>
                     </div>
                     <div>
-                        <textarea id="message-input" cols="150" rows="4"></textarea>
+                        <textarea class="form-control" id="message-input"></textarea>
                     </div>
                 </div>
-                <div class="col-3 align-items-end">
-                    <button class="py-2 px-5 bg-dark text-light" type="submit">Send</button>
+                <div class="col-2 d-grid gap-2 d-block align-items-end">
+                    <button class="text-primary fw-bold btn btn-light btn-outline-info" type="submit">Send</button>
                 </div>
             </div>
         </form>
     </div>
 
 
-
-    <footer>
+    <div class="my-5"></div>
+    <footer class="fixed-bottom">
         <div class="p-2 ms-5 text-light">
             © 2021 SheGoesTech: Javascript
         </div>

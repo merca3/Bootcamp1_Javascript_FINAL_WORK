@@ -16,10 +16,9 @@ $('#send-message').submit(function(event) {
         const newTextBox = `
     <li>
         <div class="card bg-secondary text-light">
-            <div class="card-header fs-5">
+            <div class="card-header fs-5 text-info">
                 <span id="name" class="me-5">${username}</span>
-                    <span id="day">${day}</span>.<span id="month">${month}</span>.<span id="year">${year}</span>
-                    <span id="hour">${hour}</span>:<span id="min">${mins}</span>
+                    <span id="date">${day}.${month}.${year} ${hour}:${mins}</span>
                 </div>
             <div class="card-body m-0 fs-7">
                 <div class="">

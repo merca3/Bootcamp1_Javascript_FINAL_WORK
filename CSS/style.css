@@ -6,17 +6,26 @@ body {
     background-color: #212529;
 }
 
+header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-weight: 600 !important;
+}
+
 a {
     text-decoration: none;
     color: white;
 }
 
-footer {
-    background-color: #53575a;
+a:hover {
+    color: #39C0ED !important;
 }
 
-nav li a:hover {
-    color: blue !important;
+p {
+    text-align: justify;
+}
+
+footer {
+    background-color: #53575a;
 }
 
 .carousel-indicators button {
@@ -33,7 +42,8 @@ nav li a:hover {
 }
 
 .nav-tabs .active {
-    color: black !important;
+    color: #39C0ED !important;
+    font-weight: bold !important;
     background-color: #6c757d!important;
     border: none
 }

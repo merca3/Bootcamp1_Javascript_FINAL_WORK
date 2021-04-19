@@ -1,3 +1,5 @@
+let map;
+
 function initMap() {
     const riga = { lat: 56.946285, lng: 24.105078 };
     const map = new google.maps.Map(document.getElementById("map"), {
