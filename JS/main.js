@@ -8,17 +8,12 @@ $('#send-message').submit(function(event) {
         alert('Enter message!')
     } else {
         const d = new Date();
-        const day = d.getDate();
-        const month = d.getMonth() + 1;
-        const year = d.getFullYear();
-        const hour = d.getHours();
-        const mins = d.getMinutes();
         const newTextBox = `
     <li>
         <div class="card bg-secondary text-light">
             <div class="card-header fs-5 text-info">
                 <span id="name" class="me-5">${username}</span>
-                    <span id="date">${day}.${month}.${year} ${hour}:${mins}</span>
+                    <span id="date">${d.getDate()}.${d.getMonth() + 1}.${d.getFullYear()} ${d.getHours()}:${d.getMinutes()}</span>
                 </div>
             <div class="card-body m-0 fs-7">
                 <div class="">
@@ -34,6 +29,8 @@ $('#send-message').submit(function(event) {
         $('#message-input').val('');
     }
 });
+
+
 
 $('.row-sm-image img').hover(function() {
     const source = $(this).attr('src');

@@ -56,3 +56,43 @@ footer {
     height: 400px;
     width: 100%;
 }
+
+#message {
+    display: none;
+    position: relative;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#message p {
+    padding: 0px 0px;
+    font-size: 12px;
+}
+
+
+/* $("#register-form").validate({
+    rules: {
+        username: {
+            required: true,
+        },
+        password: 'required',
+        passwordRepeat: {
+            required: true,
+            minlength: 8,
+            equalTo: '#password',
+        },
+        firstName: {
+            required: true,
+        },
+        selectCountry: {
+            required: true,
+        },
+    },
+    messages: {
+        username: "Please enter your Username",
+        password: "Password should be at least 8 symbols long",
+        passwordRepeat: "Password should be the same",
+        firstName: "Please enter your First name",
+        selectCountry: "Please choose your country",
+    },
+}); */
