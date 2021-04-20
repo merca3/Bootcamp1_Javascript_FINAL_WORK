@@ -1,11 +1,4 @@
-$("#register-form").validate({
-    rules: {
-        username: "required",
-    },
-    messages: {
-        username: "Please specify your name",
-    }
-});
+// $("#register-form").validate();
 
 
 let myInput = $("#password");
