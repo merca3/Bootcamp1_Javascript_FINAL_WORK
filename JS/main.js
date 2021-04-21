@@ -1,14 +1,25 @@
-$('#send-message').submit(function(event) {
-    event.preventDefault();
-    const username = $('#username-input').val();
-    const message = $('#message-input').val();
-    if ($('#username-input').val() === '') {
-        alert('Enter username!')
-    } else if ($('#message-input').val() === '') {
-        alert('Enter message!')
-    } else {
-        const d = new Date();
-        const newTextBox = `
+$(function() {
+    $('#send-message').validate({
+        rules: {
+            usernameinput: {
+                required: true,
+                minlength: 3,
+            },
+            message: 'required',
+        },
+        messages: {
+            usernameinput: {
+                required: 'Please enter your Username',
+                minlength: 'Username must be minimum 3 symbols long',
+            },
+            message: 'Please enter the message',
+        },
+        submitHandler: function() {
+            const username = $('#username-input').val();
+            const message = $('#message-input').val();
+
+            const d = new Date();
+            const newTextBox = `
     <li>
         <div class="card bg-secondary text-light">
             <div class="card-header fs-5 text-info">
@@ -23,12 +34,15 @@ $('#send-message').submit(function(event) {
         </div>
     </li>`;
 
-        $('#chat-window').prepend(newTextBox);
+            $('#chat-window').prepend(newTextBox);
 
-        $('#username-input').val('');
-        $('#message-input').val('');
-    }
-});
+            $('#username-input').val('');
+            $('#message-input').val('');
+        }
+    })
+})
+
+
 
 
 
