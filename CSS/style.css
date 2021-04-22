@@ -57,18 +57,6 @@ footer {
     width: 100%;
 }
 
-#message {
-    display: none;
-    position: relative;
-    padding: 10px;
-    margin-top: 10px;
-}
-
-#message p {
-    padding: 0px 0px;
-    font-size: 12px;
-}
-
 .error {
     color: white;
     font-weight: normal;
