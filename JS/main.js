@@ -20,10 +20,10 @@ $(function() {
 
             const d = new Date();
 
-            let day = d.getDate();
-            let month = d.getMonth() + 1;
-            let hour = d.getHours();
-            let minutes = d.getMinutes();
+            const day = d.getDate();
+            const month = d.getMonth() + 1;
+            const hour = d.getHours();
+            const minutes = d.getMinutes();
 
             function checkZero(date) {
                 if (date < 10) {
